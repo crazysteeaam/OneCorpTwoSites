@@ -1,0 +1,143 @@
+.transportListCard {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 480px;
+  background: rgba(34, 42, 54, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 #0006;
+  z-index: 1003;
+  padding: 28px 28px 18px 28px;
+  color: #eaf6ff;
+  font-size: 16px;
+  pointer-events: auto;
+  backdrop-filter: blur(8px) saturate(1.2);
+}
+.header {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.sortTip {
+  font-size: 15px;
+  color: #b0c4d8;
+  opacity: 0.7;
+  font-weight: 400;
+}
+.filterRow {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.select {
+  background: #222c;
+  color: #eaf6ff;
+  border: 1.5px solid #00eaff44;
+  border-radius: 8px;
+  padding: 6px 18px;
+  font-size: 15px;
+  outline: none;
+}
+.input {
+  flex: 1;
+  background: #222c;
+  color: #eaf6ff;
+  border: 1.5px solid #00eaff44;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 15px;
+  outline: none;
+}
+.searchBtn {
+  background: linear-gradient(90deg, #00eaff 30%, #1e90ff 70%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #00eaff33;
+  transition: background 0.18s;
+}
+.searchBtn:hover {
+  background: linear-gradient(90deg, #1e90ff 30%, #00eaff 70%);
+}
+.listWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 520px;
+  overflow-y: auto;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: linear-gradient(135deg, rgba(24,34,54,0.96) 60%, rgba(36,54,84,0.92) 100%);
+  border-radius: 14px;
+  padding: 16px 18px 12px 18px;
+  box-shadow: 0 2px 12px 0 rgba(0,80,255,0.10);
+  border: 1px solid rgba(80,180,255,0.12);
+  position: relative;
+  transition: box-shadow 0.18s, transform 0.18s;
+}
+.card:hover {
+  box-shadow: 0 6px 24px 0 rgba(0,180,255,0.18);
+  transform: scale(1.03);
+}
+.iconWrap {
+  flex-shrink: 0;
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #1e2a3a44;
+  border-radius: 12px;
+}
+.truckIcon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px #00eaff33);
+}
+.infoWrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  color: #fff;
+  text-shadow: 0 0 8px #1e90ff33, 0 2px 8px #0008;
+}
+.row {
+  font-size: 15px;
+  color: #b0c4d8;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.moreBtn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  color: #b0c4d8;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.18s;
+}
+.moreBtn:hover {
+  opacity: 1;
+} 

@@ -1,0 +1,206 @@
+.dashboardRoot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  pointer-events: none;
+  z-index: 1002;
+}
+.dashboardCards {
+  width: 100%;
+  max-width: 780px;
+  margin: 24px 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  pointer-events: auto;
+}
+.overviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #eaf6ff;
+  border-bottom: 1.5px solid #00eaff33;
+  padding-bottom: 6px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px #1e90ff44, 0 2px 8px #0008;
+}
+.timeToggle button {
+  background: none;
+  border: none;
+  color: #b0c4d8;
+  margin-right: 12px;
+  font-size: 18px;
+  opacity: 0.7;
+  cursor: pointer;
+  padding: 2px 12px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.timeToggle button:last-child { margin-right: 0; }
+.timeToggle .active, .timeToggle button.active {
+  color: #00eaff;
+  opacity: 1;
+  border-bottom: 2px solid #00eaff;
+  text-shadow: 0 0 6px #00eaff99;
+}
+.overviewCardsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.overviewCard {
+  background: linear-gradient(135deg, rgba(24,34,54,0.96) 60%, rgba(36,54,84,0.92) 100%);
+  border-radius: 12px;
+  width: 110px;
+  height: 110px;
+  min-width: 110px;
+  max-width: 110px;
+  min-height: 110px;
+  max-height: 110px;
+  text-align: center;
+  margin-bottom: 0;
+  box-shadow: 0 2px 12px 0 rgba(0,80,255,0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(80,180,255,0.16);
+  transition: transform 0.18s, box-shadow 0.18s;
+  font-size: 14px;
+  position: relative;
+}
+.overviewCard:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 32px 0 rgba(0,180,255,0.22);
+}
+.cardValue {
+  font-size: 22px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00eaff 30%, #1e90ff 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px #00eaff33);
+  margin-bottom: 4px;
+}
+.unit {
+  font-size: 15px;
+  margin-left: 2px;
+  color: #eaf6ff;
+  opacity: 0.85;
+}
+.cardTitle {
+  font-size: 15px;
+  color: #b0c4d8;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 4px #0004;
+}
+.dashboardRow {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  margin-top: 8px;
+}
+.dashboardCard {
+  background: linear-gradient(135deg, rgba(24,34,54,0.92) 60%, rgba(36,54,84,0.88) 100%);
+  border-radius: 14px;
+  box-shadow: 0 4px 18px 0 rgba(0,0,0,0.18);
+  padding: 22px 24px 18px 24px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1.5px solid rgba(80,180,255,0.08);
+  backdrop-filter: blur(8px) saturate(1.2);
+  -webkit-backdrop-filter: blur(8px) saturate(1.2);
+  transition: box-shadow 0.2s;
+}
+.dashboardCard:hover {
+  box-shadow: 0 12px 48px 0 rgba(0,80,255,0.18), 0 1.5px 0 0 rgba(255,255,255,0.08) inset;
+}
+.monitorCard, .pieCard {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.monitorTitle, .pieTitle, .trendTitle {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #eaf6ff;
+  text-shadow: 0 0 8px #1e90ff33, 0 2px 8px #0008;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #00eaff22;
+  padding-bottom: 2px;
+}
+.monitorList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.monitorList li {
+  font-size: 14px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 4px #0004;
+}
+.danger { color: #ff4d4f; text-shadow: 0 0 6px #ff4d4f44; }
+.warning { color: #faad14; text-shadow: 0 0 6px #faad1444; }
+.success { color: #52c41a; text-shadow: 0 0 6px #52c41a44; }
+.pieChartPlaceholder {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 8px auto;
+}
+.pieCenterText {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  text-shadow: 0 0 8px #00eaff55;
+}
+.pieLegend {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 2px;
+  gap: 12px;
+  color: #00eaff;
+  text-shadow: 0 0 6px #00eaff44;
+}
+.trendCard {
+  min-width: 0;
+}
+.trendChartPlaceholder {
+  width: 100%;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #1a2233 80%, #22334a 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #00eaff11;
+  padding: 8px 0 0 0;
+} 

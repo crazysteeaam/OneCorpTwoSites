@@ -1,0 +1,16 @@
+/* [project]/styles/Home.module.css [client] (css) */
+.Home-module__g21JLG__container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.Home-module__g21JLG__mapBg {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+/*# sourceMappingURL=styles_Home_module_css_2bef753f._.single.css.map*/

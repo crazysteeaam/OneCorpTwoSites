@@ -1,0 +1,222 @@
+/* [project]/styles/TransportDetailCard.module.css [client] (css) */
+.TransportDetailCard-module__bNVxPW__detailCard {
+  z-index: 1003;
+  color: #eaf6ff;
+  pointer-events: auto;
+  backdrop-filter: blur(8px) saturate(1.2);
+  background: #222a36eb;
+  border-radius: 18px;
+  padding: 32px 36px 28px;
+  font-size: 16px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  box-shadow: 0 4px 32px #0006;
+}
+
+.TransportDetailCard-module__bNVxPW__header {
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.TransportDetailCard-module__bNVxPW__truckRow {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.TransportDetailCard-module__bNVxPW__truckImg {
+  object-fit: contain;
+  filter: drop-shadow(0 2px 12px #0008);
+  width: 180px;
+  height: 90px;
+}
+
+.TransportDetailCard-module__bNVxPW__routeTitle {
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 8px 0 18px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.TransportDetailCard-module__bNVxPW__infoRow {
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+}
+
+.TransportDetailCard-module__bNVxPW__infoRow > div {
+  text-align: center;
+  color: #b0c4d8;
+  flex: 1;
+}
+
+.TransportDetailCard-module__bNVxPW__infoRow span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.TransportDetailCard-module__bNVxPW__hr {
+  border: none;
+  border-top: 1.5px solid #fff2;
+  margin: 16px 0 12px;
+}
+
+.TransportDetailCard-module__bNVxPW__sectionTitle {
+  color: #eaf6ff;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.TransportDetailCard-module__bNVxPW__progressRow {
+  align-items: flex-end;
+  gap: 0;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  display: flex;
+}
+
+.TransportDetailCard-module__bNVxPW__progressStep {
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+  display: flex;
+  position: relative;
+}
+
+.TransportDetailCard-module__bNVxPW__progressDot {
+  border: 2px solid #fff3;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  margin-bottom: 2px;
+  box-shadow: 0 0 8px #0f64;
+}
+
+.TransportDetailCard-module__bNVxPW__progressLabel {
+  text-align: center;
+  min-width: 48px;
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
+.TransportDetailCard-module__bNVxPW__progressTime {
+  color: #0f6;
+  white-space: nowrap;
+  margin-bottom: 2px;
+  font-size: 11px;
+}
+
+.TransportDetailCard-module__bNVxPW__progressLine {
+  z-index: 1;
+  background: linear-gradient(90deg, #0f6 60%, #bbb 100%);
+  width: 48px;
+  height: 2px;
+  position: absolute;
+  top: 6px;
+  left: 100%;
+}
+
+.TransportDetailCard-module__bNVxPW__materialTable {
+  background: #182236d9;
+  border-radius: 10px;
+  margin-top: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px #00eaff11;
+}
+
+.TransportDetailCard-module__bNVxPW__materialHeader, .TransportDetailCard-module__bNVxPW__materialRow {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.TransportDetailCard-module__bNVxPW__materialHeader {
+  color: #eaf6ff;
+  background: #222c;
+  padding: 8px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.TransportDetailCard-module__bNVxPW__materialRow {
+  color: #b0c4d8;
+  border-top: 1px solid #00eaff11;
+  padding: 7px 0;
+  font-size: 15px;
+}
+
+.TransportDetailCard-module__bNVxPW__materialHeader > div, .TransportDetailCard-module__bNVxPW__materialRow > div {
+  text-align: center;
+  flex: 1;
+}
+
+.TransportDetailCard-module__bNVxPW__riskLevel {
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  min-width: 38px;
+  margin-left: 12px;
+  padding: 2px 18px;
+  font-size: 17px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.TransportDetailCard-module__bNVxPW__risk高 {
+  background: #ff4d4f;
+}
+
+.TransportDetailCard-module__bNVxPW__risk中 {
+  color: #fff;
+  background: #faad14;
+}
+
+.TransportDetailCard-module__bNVxPW__risk低 {
+  background: #52c41a;
+}
+
+.ant-steps {
+  color: #eaf6ff !important;
+}
+
+.ant-steps .ant-steps-item-title {
+  text-shadow: 0 1px 6px #000a;
+  font-size: 16px;
+  font-weight: 500;
+  color: #eaf6ff !important;
+}
+
+.ant-steps .ant-steps-item-description {
+  font-size: 13px;
+  font-weight: 400;
+  color: #0f6 !important;
+}
+
+.ant-steps .ant-steps-item-process .ant-steps-item-icon, .ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+  box-shadow: 0 0 8px #00eaff99;
+  color: #fff !important;
+  background: #00eaff !important;
+  border-color: #00eaff !important;
+}
+
+.ant-steps .ant-steps-item-wait .ant-steps-item-icon {
+  color: #b0c4d8 !important;
+  background: #222c !important;
+  border-color: #444 !important;
+}
+
+.ant-steps .ant-steps-item-wait .ant-steps-item-title, .ant-steps .ant-steps-item-wait .ant-steps-item-description {
+  color: #b0c4d8 !important;
+}
+
+/*# sourceMappingURL=styles_TransportDetailCard_module_css_2bef753f._.single.css.map*/

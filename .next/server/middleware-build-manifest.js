@@ -1,0 +1,56 @@
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/": [
+      "static/chunks/components_AMapComponent_tsx_3fa73f20._.js",
+      "static/chunks/[root-of-the-server]__6c3d556a._.js",
+      "static/chunks/node_modules_next_af8d7af8._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_antd_es_2e7eb3da._.js",
+      "static/chunks/node_modules_@ant-design_cssinjs_es_d68e037d._.js",
+      "static/chunks/node_modules_rc-field-form_es_5f3ede8b._.js",
+      "static/chunks/node_modules_40779339._.js",
+      "static/chunks/_4392df3f._.css",
+      "static/chunks/pages_index_5771e187._.js",
+      "static/chunks/pages_index_e2dac84b._.js"
+    ],
+    "/_app": [
+      "static/chunks/[root-of-the-server]__ec07ee34._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_a51498a5._.js",
+      "static/chunks/[root-of-the-server]__49fd8634._.js",
+      "static/chunks/pages__app_5771e187._.js",
+      "static/chunks/pages__app_049595de._.js"
+    ],
+    "/_error": [
+      "static/chunks/[root-of-the-server]__527cd323._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_a51498a5._.js",
+      "static/chunks/[root-of-the-server]__923cb372._.js",
+      "static/chunks/pages__error_5771e187._.js",
+      "static/chunks/pages__error_c5ed9705._.js"
+    ],
+    "/biz": [
+      "static/chunks/[root-of-the-server]__e9c73316._.js",
+      "static/chunks/node_modules_next_dist_f1d2d383._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_antd_es_36c83f28._.js",
+      "static/chunks/node_modules_@ant-design_cssinjs_es_d68e037d._.js",
+      "static/chunks/node_modules_rc-field-form_es_5f3ede8b._.js",
+      "static/chunks/node_modules_1d751a62._.js",
+      "static/chunks/node_modules_antd_dist_reset_6a149355.css",
+      "static/chunks/pages_biz_index_tsx_5771e187._.js",
+      "static/chunks/pages_biz_index_tsx_397bac95._.js"
+    ]
+  },
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "ampFirstPages": []
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
+
+];

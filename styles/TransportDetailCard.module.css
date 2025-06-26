@@ -1,0 +1,192 @@
+.detailCard {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: rgba(34, 42, 54, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 #0006;
+  z-index: 1003;
+  padding: 32px 36px 28px 36px;
+  color: #eaf6ff;
+  font-size: 16px;
+  pointer-events: auto;
+  backdrop-filter: blur(8px) saturate(1.2);
+}
+.header {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+.truckRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.truckImg {
+  width: 180px;
+  height: 90px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 12px #0008);
+}
+.routeTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 8px 0 18px 0;
+  letter-spacing: 1px;
+}
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 10px;
+  gap: 12px;
+}
+.infoRow > div {
+  flex: 1;
+  text-align: center;
+  color: #b0c4d8;
+}
+.infoRow span {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+}
+.hr {
+  border: none;
+  border-top: 1.5px solid #fff2;
+  margin: 16px 0 12px 0;
+}
+.sectionTitle {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #eaf6ff;
+  letter-spacing: 1px;
+}
+.progressRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 0;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+.progressStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 60px;
+}
+.progressDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-bottom: 2px;
+  border: 2px solid #fff3;
+  box-shadow: 0 0 8px #00ff6644;
+}
+.progressLabel {
+  font-size: 13px;
+  margin-bottom: 2px;
+  min-width: 48px;
+  text-align: center;
+}
+.progressTime {
+  font-size: 11px;
+  color: #00ff66;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+.progressLine {
+  position: absolute;
+  top: 6px;
+  left: 100%;
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, #00ff66 60%, #bbb 100%);
+  z-index: 1;
+}
+.materialTable {
+  margin-top: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(24,34,54,0.85);
+  box-shadow: 0 2px 8px #00eaff11;
+}
+.materialHeader, .materialRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.materialHeader {
+  background: #222c;
+  color: #eaf6ff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 0;
+}
+.materialRow {
+  color: #b0c4d8;
+  font-size: 15px;
+  border-top: 1px solid #00eaff11;
+  padding: 7px 0;
+}
+.materialHeader > div, .materialRow > div {
+  flex: 1;
+  text-align: center;
+}
+.riskLevel {
+  display: inline-block;
+  min-width: 38px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 2px 18px;
+  margin-left: 12px;
+  color: #fff;
+}
+.risk高 {
+  background: #ff4d4f;
+}
+.risk中 {
+  background: #faad14;
+  color: #fff;
+}
+.risk低 {
+  background: #52c41a;
+}
+
+:global(.ant-steps) {
+  color: #eaf6ff !important;
+}
+:global(.ant-steps .ant-steps-item-title) {
+  color: #eaf6ff !important;
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 1px 6px #000a;
+}
+:global(.ant-steps .ant-steps-item-description) {
+  color: #00ff66 !important;
+  font-size: 13px;
+  font-weight: 400;
+}
+:global(.ant-steps .ant-steps-item-process .ant-steps-item-icon),
+:global(.ant-steps .ant-steps-item-finish .ant-steps-item-icon) {
+  background: #00eaff !important;
+  border-color: #00eaff !important;
+  color: #fff !important;
+  box-shadow: 0 0 8px #00eaff99;
+}
+:global(.ant-steps .ant-steps-item-wait .ant-steps-item-icon) {
+  background: #222c !important;
+  border-color: #444 !important;
+  color: #b0c4d8 !important;
+}
+:global(.ant-steps .ant-steps-item-wait .ant-steps-item-title),
+:global(.ant-steps .ant-steps-item-wait .ant-steps-item-description) {
+  color: #b0c4d8 !important;
+} 

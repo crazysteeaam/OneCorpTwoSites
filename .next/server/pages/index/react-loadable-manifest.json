@@ -1,0 +1,9 @@
+{
+  "[project]/components/AMapComponent.tsx [client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/AMapComponent.tsx [client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_AMapComponent_tsx_cdee5d2c._.js",
+      "static/chunks/components_AMapComponent_tsx_b0c0d552._.js"
+    ]
+  }
+}
